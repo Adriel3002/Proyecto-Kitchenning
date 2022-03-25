@@ -1,0 +1,40 @@
+header {
+    width: 100%;
+}
+
+header .logo {
+    background-image: url('/images/logo.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px var(--colorGrisClaro);
+    width: 180px;
+    margin: 15px auto 30px;
+    height: 180px;
+}
+header button {
+    background-color: var(--colorGrisOscuro);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-size: 32px;
+    padding: 5px;
+    margin: 0 auto 30px;
+    width: 50px;
+}
+.header__menu li {
+    background-color: var(--colorGrisOscuro);
+    border-bottom: solid 2px white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    
+    
+}
+@media (min-width : 460px) {
+    .header__menu li {
+        background-color: var(--colorRojo);
+    }
+}
