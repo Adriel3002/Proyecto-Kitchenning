@@ -18,23 +18,42 @@ header button {
     border-radius: 5px;
     color: white;
     display: block;
+    margin: 0 auto 30px;
     font-size: 32px;
     padding: 5px;
-    margin: 0 auto 30px;
     width: 50px;
 }
 .header__menu li {
     background-color: var(--colorGrisOscuro);
     border-bottom: solid 2px white;
+    padding: 10px 0;
     text-transform: uppercase;
     text-align: center;
-    padding: 10px 0;
     width: 100%;
-    
+}
+/* TABLETS */
+@media (min-width : 460px) {
+
+    header button {
+        display: none;
+    }
+    .header__menu ul {
+        overflow: hidden;
+    }
+    .header__menu li {
+        float: left;      
+        font-size: 0.6rem; 
+        width: 15.5%;
+        margin-right: 1.4%;
+    }
+    .header__menu li:last-child {
+        margin-right: 0;
+    }
     
 }
-@media (min-width : 460px) {
+/* LAPTOPS */
+@media (min-width: 768px) {
     .header__menu li {
-        background-color: var(--colorRojo);
+        font-size: 1rem;
     }
 }

@@ -47,3 +47,56 @@ body.home {
     text-align: center;
     width: 80px;
 }
+
+/* TABLETS */
+@media (min-width: 460px) {
+
+    /* banner */
+    .home__box-banner{
+        display: block;
+        margin-top: 30px;
+
+    }
+
+    .home__box-banner img {
+        width: 100%;
+    }
+
+    /* product */
+    .home__box-products {
+        overflow: hidden;
+    }
+
+    .home__product {
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .home__product:nth-child(even) {
+        margin-right: 0;
+    }
+}
+
+/* LAPTOPS */
+@media (min-width: 768px) {
+
+    /* Products */
+    .home__product {
+        width: 32%;
+        margin-right: 2%;
+    }
+
+    .home__product:nth-child(even) {
+        margin-right:2%;
+    }
+
+    .home__product:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    
+}
+
+
+
